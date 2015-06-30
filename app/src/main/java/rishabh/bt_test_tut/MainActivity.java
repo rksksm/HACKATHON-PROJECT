@@ -19,13 +19,12 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button b1 = (Button) findViewById(R.id.button);
-                b1.setOnClickListener(new View.OnClickListener()
-                {
-                    public void onClick(View v)
-                    {
-
+                b1.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                       // if (R.id.editText == 1234 && R.id.editText2 == 5678) {
                         Intent i = new Intent(getApplicationContext(), BT_screen.class);
                         startActivity(i);
+                        //}
                     }
                 });
     }
